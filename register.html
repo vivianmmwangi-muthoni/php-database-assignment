@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Formulator's Lab - Registry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">The Formulator's Lab</div>
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="phases.html">Formulation Phases</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html" class="active">Join the Registry</a>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        <header class="page-header">
+            <h1>Formulator Registry</h1>
+            <p>Join our scientific network of cosmetic chemists</p>
+        </header>
+
+        
+        <div id="form-error-msg" class="alert-box error-box" style="display: none; background: #f8d7da; color: #721c24; padding: 12px; border-radius: 6px; margin-bottom: 20px;"></div>
+        <div id="form-success-msg" class="alert-box success-box" style="display: none; background: #d4edda; color: #155724; padding: 12px; border-radius: 6px; margin-bottom: 20px;"></div>
+
+        <form id="registryForm" action="process_register.php" method="POST">
+  <fieldset>
+    <legend>Personal & Professional Information</legend>
+    
+    <div class="form-group">
+      <label for="fullName">Full Name *</label>
+      <input type="text" id="fullName" name="fullName" placeholder="e.g. Muthoni Mwangi" required>
+    </div>
+
+    <div class="form-group">
+      <label for="emailAddress">Email Address *</label>
+      <input type="email" id="emailAddress" name="emailAddress" placeholder="e.g. formulator@lab.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="role">Primary Focus Area</label>
+      <select id="role" name="role">
+        <option value="skincare">Skincare Formulation</option>
+        <option value="haircare">Haircare Systems</option>
+        <option value="quality">Quality Assurance</option>
+      </select>
+    </div>
+
+    <button type="submit" id="submitBtn">Submit Registration</button>
+  </fieldset>
+</form>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 The Formulator's Lab. Built for high-pressure precision coding and cosmetic science.</p>
+    </footer>
+
+</body>
+</html>

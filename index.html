@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Formulator's Lab - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">The Formulator's Lab</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="phases.html">Formulation Phases</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html">Join the Registry</a>
+        </div>
+    </nav>
+
+    <main class="main-container">
+        
+        <div id="welcome-banner"></div>
+
+        <header class="page-header">
+            <h1>Lab Dashboard</h1>
+            <p>Precision Cosmetic Chemistry & Batch Tracking Interface</p>
+        </header>
+
+        <section>
+            <h2>Lab Overview</h2>
+            <p>Welcome to the central hub for advanced topical product development. This platform is designed to streamline the compounding workflow, maintain raw material logs, and organize batch records with strict logical consistency.</p>
+            
+            
+            <button id="toggle-notes-btn" class="interactive-btn">Show Technical Stability Guidelines ▼</button>
+            <div id="technical-notes" class="expandable-panel" style="display: none;">
+                <p><strong>Note:</strong> Active ingredients such as SymWhite 377 and Alpha Arbutin must be incorporated below 40°C during Phase C to prevent thermolabile degradation.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Core Brightening Actives Log</h2>
+            <p>We actively monitor and document high-potency ingredients used in targeted hyperpigmentation research:</p>
+            <ul>
+                <li><strong>Hexylresorcinol:</strong> A powerful amphiphilic clinically proven skin-brightening agent.</li>
+                <li><strong>Alpha Arbutin:</strong> A biosynthetic functional active for tyrosinase inhibition.</li>
+                <li><strong>SymWhite 377 (Phenylethyl Resorcinol):</strong> One of the most potent tyrosinase inhibitors available.</li>
+                <li><strong>Azelaic Acid (PAD):</strong> Potassium Azeloyl Diglycinate, a water-soluble derivative optimizing skin tone and sebum production.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Recent Formulation Batches</h2>
+            <p><strong>Batch #104: Advanced Brightening Serum</strong></p>
+            
+            
+            <div id="ph-status-badge" class="status-badge" data-status="optimal" style="background-color: #2ecc71; color: white; padding: 10px; border-radius: 6px; display: inline-block; margin-bottom: 15px;">
+                Status: Optimal Stability (pH 5.2 Target Met)
+            </div>
+            <br>
+            <button id="check-ph-btn" class="secondary-btn">Recalibrate Batch pH</button>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 The Formulator's Lab. Built for high-pressure precision coding and cosmetic science.</p>
+    </footer>
+
+</body>
+</html>
